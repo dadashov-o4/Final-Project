@@ -1,0 +1,361 @@
+// Variables
+$border-color: #ddd;
+$primary-color: #007bff;
+$border-radius: 8px;
+$padding: 16px;
+
+
+section.Section {
+
+    div.uk-page-heading {
+
+        border-radius: 20px;
+
+        h1.uk-page-heading-h {
+            font-size: 35px;
+        }
+
+    }
+
+    .avatarBarleyDiv {
+
+
+        display: inline-block;
+        border-radius: 50%;
+        overflow: hidden;
+        padding: 5px;
+        background-color: rgba(211, 211, 211, 0.2);
+
+        /* Daha şeffaf gri halka rengi */
+        .barleyAvatar {
+            display: block;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    div.commentContain {
+        div.commentBottomPart {
+            border: 1px solid #eaeaea;
+
+            /* Style for the h3Div */
+            div.h3Div {
+                border-bottom: 1px solid #eaeaea;
+                border-radius: 5px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                margin-bottom: 15px;
+            }
+
+            div.textareaDiv {
+                position: relative;
+                width: 100%;
+
+                textarea {
+                    resize: none;
+                    overflow: auto;
+                    width: 100%;
+                    border: 1px solid #eaeaea;
+                    box-sizing: border-box;
+                    background-color: #fcfcfc;
+                }
+
+                textarea::-webkit-scrollbar {
+                    width: 12px;
+                }
+
+                textarea::-webkit-scrollbar-track {
+                    border-radius: 10px;
+                }
+
+                textarea::-webkit-scrollbar-thumb {
+                    background: #e8e7e7;
+                    border-radius: 10px;
+                }
+
+
+
+            }
+
+            .sendDiv {
+                .uk-button-default {
+                    border-radius: 20px;
+                    padding: 5px;
+                }
+            }
+
+            .uk-button-default {
+                border-radius: 10px;
+            }
+
+
+        }
+
+        div.commentForm {
+            ul.comment-border {
+                border: 1px solid #eaeaea;
+
+                li {
+                    border-top: 1px solid #eaeaea;
+                    padding-top: 40px;
+
+                    &:first-child {
+                        border-top: none;
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.right {
+
+
+    div.rightTop {
+        min-height: 340px;
+        padding-top: 20px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: $border-radius;
+        overflow: hidden;
+        padding: $padding;
+
+        .avatarContain {
+
+
+
+            .avatarBarleyDiv {
+
+
+                display: inline-block;
+                border-radius: 50%;
+                overflow: hidden;
+                padding: 5px;
+                background-color: rgba(162, 160, 160, 0.2);
+
+                /* Daha şeffaf gri halka rengi */
+                .barleyAvatar {
+                    display: block;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+
+        .avatarBottomPart {
+
+            border-bottom: #f9f9f9;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top: 1px solid $border-color;
+            padding: 8px;
+
+            .numbers {
+                padding: 20px;
+
+            }
+
+        }
+    }
+
+    .viewDiv {
+
+        width: 100%;
+
+        .viewLink {
+            color: #f46119;
+            width: 100%;
+            background-color: #fbf6f3;
+            border-radius: 5px;
+            font-weight: 500;
+            display: inline-block; // Ensures the width is applied properly
+            text-align: center;
+            padding: 11px; // Centers the text within the block
+            width: 100%;
+
+            &:hover {
+                background-color: #f46119;
+                color: white;
+                border-radius: 8px; // Change to the desired hover color
+            }
+        }
+    }
+
+
+
+
+
+    // Mixin
+    @mixin center-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // Styles
+
+
+    .fl-cover-single {
+        @include center-flex;
+        flex-direction: column;
+        height: 100%; // Full height of the card
+    }
+
+    .fl-gp-info {
+        @include center-flex;
+        flex-direction: column;
+    }
+
+    .fl-gp-avatar {
+        margin-bottom: 8px;
+    }
+
+    .avatar {
+        border-radius: 50%;
+    }
+
+    .Barry {
+        margin-bottom: 4px;
+        text-align: center;
+
+        a.LasterBarry {
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .usernameDiv {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+
+
+
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .numberLeft,
+    .numberRight {
+        text-align: center;
+    }
+
+    .viewLink {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+}
+
+
+
+
+section.myFriends {
+    background-color: white !important;
+
+    h3.FriendH3Top {
+        text-align: start;
+        padding: 20px;
+        margin: 0;
+        border-bottom: 1px solid #eaeaea;
+
+
+        i.fa-trophy {
+            color: #fb9460;
+            margin-right: 10px;
+        }
+    }
+
+    div.FriendContain {
+
+        padding: 20px;
+
+        section.FriendSection {
+
+            display: flex;
+            margin-top: 20px;
+
+            div.FriendDiv {
+
+                h2.FriendH2 {
+
+
+                    font-size: 15px;
+                    margin: 0;
+
+                    a {
+                        color: black !important;
+                        text-decoration: none !important;
+                    }
+                }
+
+                div.FriendDate {
+                    time {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+
+            img.FriendImg {
+
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+            }
+        }
+
+        button.FriendViewAll {
+            border-radius: 20px;
+            padding: 4px;
+            background-color: #fef7f3;
+            color: #fb9460;
+        }
+    }
+}
+
+section.groupSection {
+
+    h3.groupH3 {
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 15px;
+
+        i.fa-layer-group {
+            color: #fea071;
+            margin-right: 10px;
+        }
+    }
+
+    div.groupListContain {
+
+        padding: 10px 35px !important;
+
+        ul.groupList {
+
+            list-style: none;
+            list-style-position: inside;
+            padding: 0;
+
+            a.groupLink {
+                text-decoration: none;
+                color: black;
+
+                i.fa-chevron-right {
+                    color: #fb9460;
+                }
+            }
+        }
+    }
+}

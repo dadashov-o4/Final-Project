@@ -1,0 +1,741 @@
+* {
+    box-sizing: border-box;
+}
+
+
+div.container {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 60px 30px;
+    width: 100vw;
+    overflow: auto;
+    height: 100vh;
+
+    div.row {
+
+        div.recommendations {
+
+            .SwiperRecommend {
+                width: 750px;
+                height: 300px;
+                background-color: aqua;
+                margin: 0;
+            }
+        }
+
+
+        div.archive {
+
+
+            .SwiperArchive {
+                width: 400px;
+                height: 350px;
+                background-color: aquamarine;
+            }
+        }
+    }
+
+    div.communities {
+        margin-top: 60px;
+
+        .SwiperCommunity {
+            background-color: beige;
+            height: 300px;
+        }
+    }
+
+    div.group {
+        margin-top: 60px;
+
+        .SwiperGroup {
+            background-color: bisque;
+            height: 200px;
+        }
+    }
+
+    div.store {
+        margin-top: 60px;
+
+        .SwiperStore {
+            background-color: bisque;
+            height: 300px;
+        }
+    }
+}
+
+
+
+
+.SwiperRecommend {
+    padding: 10px;
+    background-color: white !important; // Set background color to white
+
+    .swiper-wrapper {
+        height: 100%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .recommendContain {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .recommendImg {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        font-size: 20px;
+        z-index: 10;
+
+        &:after {
+            font-size: 20px;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        bottom: 20px;
+    }
+
+    .swiper-button-next {
+        right: 20px;
+    }
+
+    .swiper-button-prev {
+        right: 70px; // Adjust to leave space for the next button
+    }
+
+    .swiper-pagination-bullet {
+        background-color: orange;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 30px;
+        height: 10px;
+        border-radius: 50px !important;
+        background-color: darkorange;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination {
+        bottom: 10px;
+    }
+
+    .swiper-container {
+        padding-bottom: 30px;
+    }
+}
+
+
+
+.SwiperArchive {
+    padding: 10px;
+    background-color: transparent !important;
+    height: 380px !important;
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: orange;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 30px;
+        height: 10px;
+        border-radius: 50px !important;
+        background-color: darkorange;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination {
+        bottom: 10px;
+    }
+
+    .swiper-container {
+        padding-bottom: 30px;
+    }
+
+    .archiveSlideContain {
+        padding: 10px;
+        background-color: white;
+
+    }
+
+    .archiveContain {
+        display: flex;
+        background-color: white;
+        height: 300px !important;
+
+
+        .archiveImg,
+        .archiveAbout {
+            flex: 1; // Each takes up half of the slide width
+        }
+
+        .archiveImg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%; // Make sure the image fills its container
+                height: 100%;
+                object-fit: cover; // Ensures the image covers the container properly
+            }
+        }
+
+        .archiveAbout {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+
+            h3 {
+                margin-bottom: 5px;
+            }
+
+            p {
+                margin-top: 0;
+            }
+
+            button {
+                border: none;
+                background-color: transparent;
+                color: #fb9460;
+                align-self: flex-start;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: #fff;
+        /* Arka plan rengini beyaz yapın */
+        color: #000;
+        /* Ok işaretinin rengini siyah yapın */
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        border: none;
+        /* Varsayılan sınırı kaldırın */
+
+        &::after {
+            font-size: 20px;
+            color: #000;
+            /* Ok işaretinin rengini siyah yapın */
+        }
+    }
+
+    /* Konumlandırma */
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+
+
+}
+
+
+
+
+
+.SwiperCommunity {
+    height: 750px !important;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        color: black;
+        z-index: 10;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 20px;
+        color: black;
+    }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background-color: #f0f0f0;
+    }
+
+
+    .swiper-pagination-bullet {
+        background-color: orange;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 30px;
+        height: 10px;
+        border-radius: 50px !important;
+        background-color: darkorange;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination {
+        bottom: 10px;
+    }
+
+    .swiper-container {
+        padding-bottom: 30px;
+    }
+
+    .communitySlideContain {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5px;
+        height: 700px;
+
+
+        .communityImgContain {
+            padding: 10px !important;
+            padding-bottom: 0;
+            width: 100%;
+            height: 71%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .communnityImgDiv {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .textOverlay {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .textOverlay h2 {
+            margin: 0;
+            color: white;
+        }
+
+        .textOverlay p {
+            margin: 0;
+            color: #b9b9b9;
+        }
+
+        .communnityImg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+
+
+        .numberDiv {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .members {
+
+            border-right: 0 !important;
+        }
+
+
+        .posts,
+        .members {
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+            border: solid #eaeaea;
+            border-width: 0 1px 1px 0 !important;
+
+            h2,
+            p {
+                margin: 0;
+                font-size: 15px;
+            }
+
+        }
+
+        .buttonDiv {
+            text-align: center;
+            background-color: #f5f5f5;
+
+            button {
+                padding: 10px 20px;
+                background-color: #ff6104;
+                color: #fff;
+                border: none;
+                border-radius: 50px;
+                width: 500px;
+                cursor: pointer;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+$avatar-size: 50px;
+$space-between: 30px;
+$star-color: #ffd700;
+
+.mySwiper {
+
+    height: 300px;
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+
+        &::after {
+            font-size: 20px;
+            color: #333;
+        }
+    }
+
+    .swiper-button-next {
+        right: 10px; // Sağda konumlandır
+    }
+
+    .swiper-button-prev {
+        left: 10px; // Solda konumlandır
+    }
+
+    .swiper-pagination-bullet {
+        background-color: orange;
+        opacity: 1;
+    }
+
+
+
+    .swiper-pagination-bullet-active {
+        width: 30px;
+        height: 10px;
+        border-radius: 50px !important;
+        background-color: darkorange;
+        transition: all 0.3s ease;
+    }
+
+
+
+    .groupSlideContain {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+        height: 200px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .groupContain {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .groupTop,
+    .groupBottom {
+        margin-bottom: 15px;
+    }
+
+    .groupTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eaeaea;
+
+
+        .leftPart {
+            justify-content: start;
+
+
+            h2 {
+                margin: 0;
+                margin-top: -20px;
+                font-size: 1.5rem;
+                color: #333;
+            }
+
+            p {
+                margin: 0;
+                color: #666;
+            }
+        }
+
+        .rightPart {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            i {
+                color: $star-color;
+                margin-right: 5px;
+                font-size: 1.2rem;
+            }
+
+            p {
+                margin-left: 10px;
+                font-size: 0.9rem;
+                color: #333;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .groupBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .leftPart {
+            button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #ff6104; // Buton rengi
+                color: #fff;
+                font-size: 0.9rem;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+
+        .rightPart {
+            display: flex;
+            align-items: center;
+
+            .avatarWrapper {
+                margin-left: -20px;
+                position: relative;
+                border: 3px solid white;
+                border-radius: 50%;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            .Avatars {
+                width: $avatar-size;
+                height: $avatar-size;
+                border-radius: 50%;
+                object-fit: cover;
+                display: flex;
+            }
+        }
+    }
+
+}
+
+
+.SwiperStore {
+    height: 470px !important;
+    background-color: transparent !important;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+
+        &::after {
+            font-size: 20px;
+            color: #333;
+        }
+    }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: orange;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 30px;
+        height: 10px;
+        border-radius: 50px !important;
+        background-color: darkorange;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination {
+        bottom: 10px;
+    }
+
+    .swiper-container {
+        padding-bottom: 30px;
+    }
+
+
+    .StoreSlideContain {
+
+        div.cardContain {
+
+            img.cardImg {
+
+                width: 100%;
+                height: 228px;
+            }
+
+            div.card-body {
+                div.rating {
+
+                    p.firstP,
+                    i.bi-star-fill {
+                        color: #ff9900;
+                    }
+
+                    p.secondP {
+                        color: #ff6104;
+                    }
+                }
+
+                div.bottomPart {
+                    display: flex;
+                    justify-content: space-between;
+
+                    div.leftPart {
+                        i {
+                            color: #666;
+                        }
+                    }
+
+                    .rightPart {
+                        display: flex;
+                        align-items: center;
+
+                        .avatarWrapper {
+                            margin-left: -20px;
+                            border: 3px solid white;
+                            border-radius: 50%;
+
+                            
+
+                            img {
+                                width: 30px;
+                                height: 30px;
+                            }
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+
+                        .Avatars {
+                            width: $avatar-size;
+                            height: $avatar-size;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

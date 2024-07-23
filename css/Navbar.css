@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+.navbar {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  display: block;
+  box-shadow: 10px 9px 5px 0px rgb(233, 233, 233);
+}
+.navbar div.container-fluid .logoDiv span {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.navbar div.container-fluid div.collapse ul li span i.fa-comment-dots {
+  font-size: 22px;
+}
+.navbar div.container-fluid div.collapse ul li span i.fa-bell {
+  font-size: 22px;
+}
+.navbar div.container-fluid form.search .search-container {
+  position: relative;
+  margin: 20px;
+}
+.navbar div.container-fluid form.search .search-container input::-moz-placeholder {
+  padding: 40px;
+}
+.navbar div.container-fluid form.search .search-container input::placeholder {
+  padding: 40px;
+}
+.navbar div.container-fluid form.search .search-container input {
+  width: 550px;
+  height: 45px;
+  position: relative;
+}
+.navbar div.container-fluid form.search .search-container span i.fa-magnifying-glass {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navbar div.container-fluid form.search .search-container span i.fa-microphone {
+  font-size: 24px;
+}
+.navbar div.container-fluid div.logoDiv img.logo {
+  width: 30px;
+  height: 47px;
+}
+.navbar div.container-fluid div.logoDiv span {
+  font-size: 20px;
+}
+.navbar div.container-fluid li.dropdown:nth-child(1) a {
+  font-size: 12px;
+}
+.navbar div.container-fluid li.nav-item.dropdown a img {
+  width: 32px;
+  height: 32px;
+}/*# sourceMappingURL=Navbar.css.map */

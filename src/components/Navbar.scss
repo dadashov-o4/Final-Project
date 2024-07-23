@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+$fontFamily: "Inter", sans-serif;
+$fontWeight500: 500;
+$fontWeight600: 600;
+
+
+.navbar {
+    font-family: $fontFamily;
+    font-weight: $fontWeight500;
+    display: block;
+    -webkit-box-shadow: 10px 9px 5px 0px rgba(233, 233, 233, 1);
+    -moz-box-shadow: 10px 9px 5px 0px rgba(233, 233, 233, 1);
+    box-shadow: 10px 9px 5px 0px rgba(233, 233, 233, 1);
+
+    div.container-fluid {
+        .logoDiv {
+            span {
+                font-family: $fontFamily;
+                font-weight: $fontWeight600;
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+        div.collapse {
+            ul {
+                li {
+                    span {
+                        i.fa-comment-dots {
+                            font-size: 22px;
+                        }
+
+                        i.fa-bell {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+        form.search {
+            .search-container {
+                position: relative;
+                margin: 20px;
+
+                input::placeholder {
+                    padding: 40px;
+                }
+
+                input {
+                    width: 550px;
+                    height: 45px;
+                    position: relative;
+                }
+
+                span {
+
+                    i.fa-magnifying-glass {
+                        position: absolute;
+                        left: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    i.fa-microphone {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        div.logoDiv {
+            img.logo {
+                width: 30px;
+                height: 47px;
+                margin-bottom: 20px;
+            }
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        li.dropdown:nth-child(1) {
+            a {
+                font-size: 12px;
+            }
+        }
+
+        li.nav-item.dropdown {
+            a {
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+        }
+    }
+}

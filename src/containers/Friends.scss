@@ -1,0 +1,185 @@
+section.friends {
+
+    width: 100%;
+
+    div.searchPart {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #ffff;
+        padding: 20px;
+
+        form.search {
+            position: relative;
+            width: 80%;
+            margin-left: 0 !important;
+
+            .fa-magnifying-glass {
+                position: absolute;
+                left: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+
+            input {
+                padding-left: 40px;
+                height: 45px;
+
+            }
+
+            .fa-microphone {
+                font-size: 22px;
+                margin-top: 5px;
+            }
+        }
+
+        .form-select {
+            width: 15%;
+            height: 45px;
+            background-color: #f8f9fa;
+        }
+
+        .form-select:focus {
+            box-shadow: none;
+            border: 1px solid #dcdada;
+        }
+
+        .moreBar {
+            i {
+                font-size: 30px;
+            }
+        }
+
+    }
+
+    .friendCards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .card {
+            flex: 1 1 calc(50% - 10px);
+            max-width: calc(50% - 10px);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 50%;
+
+            .left {
+                display: flex;
+                align-items: center;
+
+                .imgDiv {
+                    margin-right: 10px;
+
+                    img {
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                .for-h3-p {
+
+                    h3,
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .right {
+                i {
+                    cursor: pointer;
+                    font-size: 30px;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+    }
+
+    .edit-friends {
+
+        .edit-contain {
+            background-color: #ffff;
+            .card {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+                padding: 15px;
+                border: none;
+                border-radius: 5px;
+                background-color: transparent;
+
+                .left {
+                    display: flex;
+                    align-items: center;
+
+                    .imgDiv {
+                        margin-right: 10px;
+
+                        img {
+                            border-radius: 50%;
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+
+                    .for-p {
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    gap: 10px; // Adds space between icons
+                  
+                    span.for-check {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      cursor: pointer;
+                      width: 45px;
+                      height: 45px;
+                      background-color: #e5f6ee;
+                      border-radius: 15px; // Rounded corners
+                  
+                      i.bi-check-circle {
+                        color: rgb(13, 190, 13);
+                        font-size: 20px;
+                      }
+                    }
+                  
+                    span.for-trash {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      cursor: pointer;
+                      width: 45px;
+                      height: 45px;
+                      background-color: rgb(241, 190, 174);
+                      border-radius: 15px; // Rounded corners
+                  
+                      i.bi-trash {
+                        font-size: 20px;
+                        color: rgb(180, 4, 4);
+                      }
+                    }
+                  }
+                  
+            }
+
+        }
+    }
+
+}
