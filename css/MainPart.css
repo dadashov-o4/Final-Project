@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+div.container {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 60px 30px;
+  width: 100%;
+  overflow: auto;
+  height: 100vh;
+}
+div.container div.row div.recommendations h3 {
+  font-family: "Marcellus";
+  font-weight: 600;
+  font-size: 30px;
+}
+div.container div.row div.recommendations .SwiperRecommend {
+  width: 750px;
+  height: 300px;
+  background-color: aqua;
+  margin: 0;
+}
+div.container div.row div.archive {
+  width: 400px;
+  margin-left: 80px;
+}
+div.container div.row div.archive h3 {
+  margin: 0;
+  font-family: "Marcellus";
+  font-weight: 600;
+  font-size: 30px;
+}
+div.container div.row div.archive .SwiperArchive {
+  width: 100%;
+  height: 350px;
+  background-color: aquamarine;
+}
+div.container div.communities {
+  margin-top: 60px;
+}
+div.container div.communities h3 {
+  font-family: "Marcellus";
+  font-weight: 600;
+  font-size: 30px;
+}
+div.container div.communities .SwiperCommunity {
+  background-color: beige;
+  height: 300px;
+}
+div.container div.group {
+  margin-top: 60px;
+}
+div.container div.group h3 {
+  font-family: "Marcellus";
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+div.container div.group .SwiperGroup {
+  background-color: bisque;
+  height: 200px;
+}
+div.container div.store {
+  margin-top: 60px;
+}
+div.container div.store h3 {
+  font-family: "Marcellus";
+  font-weight: 600;
+  font-size: 30px;
+}
+div.container div.store .SwiperStore {
+  background-color: bisque;
+  height: 300px;
+}
+
+.SwiperRecommend {
+  padding: 10px;
+  background-color: white !important;
+}
+.SwiperRecommend .swiper-wrapper {
+  height: 100%;
+}
+.SwiperRecommend .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.SwiperRecommend .recommendContain {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.SwiperRecommend .recommendContain .recommendImg {
+  width: 100%;
+  height: 100%;
+}
+.SwiperRecommend .recommendContain .recommendImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.SwiperRecommend .swiper-button-next,
+.SwiperRecommend .swiper-button-prev {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 20px;
+  z-index: 10;
+}
+.SwiperRecommend .swiper-button-next:after,
+.SwiperRecommend .swiper-button-prev:after {
+  font-size: 20px;
+}
+.SwiperRecommend .swiper-button-next,
+.SwiperRecommend .swiper-button-prev {
+  position: absolute;
+  bottom: 20px;
+}
+.SwiperRecommend .swiper-button-next {
+  right: 20px;
+}
+.SwiperRecommend .swiper-button-prev {
+  right: 70px;
+}
+.SwiperRecommend .swiper-pagination-bullet {
+  background-color: orange;
+  opacity: 1;
+}
+.SwiperRecommend .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 10px;
+  border-radius: 50px !important;
+  background-color: darkorange;
+  transition: all 0.3s ease;
+}
+.SwiperRecommend .swiper-pagination {
+  bottom: 10px;
+}
+.SwiperRecommend .swiper-container {
+  padding-bottom: 30px;
+}
+
+.SwiperArchive {
+  padding: 10px;
+  background-color: transparent !important;
+  height: 380px !important;
+}
+.SwiperArchive .swiper-button-next {
+  right: 10px;
+}
+.SwiperArchive .swiper-button-prev {
+  left: 10px;
+}
+.SwiperArchive .swiper-pagination-bullet {
+  background-color: orange;
+  opacity: 1;
+}
+.SwiperArchive .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 10px;
+  border-radius: 50px !important;
+  background-color: darkorange;
+  transition: all 0.3s ease;
+}
+.SwiperArchive .swiper-pagination {
+  bottom: 10px;
+}
+.SwiperArchive .swiper-container {
+  padding-bottom: 30px;
+}
+.SwiperArchive .archiveSlideContain {
+  padding: 10px;
+  background-color: white;
+}
+.SwiperArchive .archiveContain {
+  display: flex;
+  background-color: white;
+  height: 300px !important;
+}
+.SwiperArchive .archiveContain .archiveImg,
+.SwiperArchive .archiveContain .archiveAbout {
+  flex: 1;
+}
+.SwiperArchive .archiveContain .archiveImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SwiperArchive .archiveContain .archiveImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.SwiperArchive .archiveContain .archiveAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.SwiperArchive .archiveContain .archiveAbout h3 {
+  margin-bottom: 5px;
+  font-size: 25px !important;
+}
+.SwiperArchive .archiveContain .archiveAbout p {
+  margin-top: 0;
+  font-size: 16px !important;
+  padding-right: 3px;
+  color: #848383;
+}
+.SwiperArchive .archiveContain .archiveAbout button {
+  border: none;
+  background-color: transparent;
+  color: #fb9460;
+  align-self: flex-start;
+  margin-top: 0;
+}
+.SwiperArchive .archiveContain .archiveAbout button:hover {
+  color: #ff6104;
+}
+.SwiperArchive .swiper-button-next,
+.SwiperArchive .swiper-button-prev {
+  background-color: #fff;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  border: none;
+}
+.SwiperArchive .swiper-button-next::after,
+.SwiperArchive .swiper-button-prev::after {
+  font-size: 20px;
+  color: #000;
+}
+.SwiperArchive .swiper-button-next {
+  right: 10px;
+}
+.SwiperArchive .swiper-button-prev {
+  left: 10px;
+}
+
+.SwiperCommunity {
+  height: 750px !important;
+}
+.SwiperCommunity .swiper-button-next,
+.SwiperCommunity .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: black;
+  z-index: 10;
+}
+.SwiperCommunity .swiper-button-next::after,
+.SwiperCommunity .swiper-button-prev::after {
+  font-size: 20px;
+  color: black;
+}
+.SwiperCommunity .swiper-button-next {
+  right: 10px;
+}
+.SwiperCommunity .swiper-button-prev {
+  left: 10px;
+}
+.SwiperCommunity .swiper-button-next:hover,
+.SwiperCommunity .swiper-button-prev:hover {
+  background-color: #f0f0f0;
+}
+.SwiperCommunity .swiper-pagination-bullet {
+  background-color: orange;
+  opacity: 1;
+}
+.SwiperCommunity .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 10px;
+  border-radius: 50px !important;
+  background-color: darkorange;
+  transition: all 0.3s ease;
+}
+.SwiperCommunity .swiper-pagination {
+  bottom: 10px;
+}
+.SwiperCommunity .swiper-container {
+  padding-bottom: 30px;
+}
+.SwiperCommunity .communitySlideContain {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  height: 700px;
+}
+.SwiperCommunity .communitySlideContain .communityImgContain {
+  padding: 10px !important;
+  padding-bottom: 0;
+  width: 100%;
+  height: 71%;
+  display: flex;
+  justify-content: center;
+}
+.SwiperCommunity .communitySlideContain .communnityImgDiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.SwiperCommunity .communitySlideContain .textOverlay {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: white;
+  border-radius: 5px;
+}
+.SwiperCommunity .communitySlideContain .textOverlay h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+.SwiperCommunity .communitySlideContain .textOverlay p {
+  margin: 0;
+  color: #b9b9b9;
+  font-size: 15px;
+}
+.SwiperCommunity .communitySlideContain .communnityImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.SwiperCommunity .communitySlideContain .numberDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.SwiperCommunity .communitySlideContain .members {
+  border-right: 0 !important;
+}
+.SwiperCommunity .communitySlideContain .posts,
+.SwiperCommunity .communitySlideContain .members {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  border: solid #eaeaea;
+  border-width: 0 1px 1px 0 !important;
+}
+.SwiperCommunity .communitySlideContain .posts h2,
+.SwiperCommunity .communitySlideContain .members h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+.SwiperCommunity .communitySlideContain .posts p,
+.SwiperCommunity .communitySlideContain .members p {
+  color: #848383;
+  margin: 0;
+  font-size: 15px;
+}
+.SwiperCommunity .communitySlideContain .buttonDiv {
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.SwiperCommunity .communitySlideContain .buttonDiv p {
+  color: #848383;
+  font-weight: 400;
+  font-size: 13px;
+}
+.SwiperCommunity .communitySlideContain .buttonDiv button {
+  padding: 10px 20px;
+  background-color: #ff6104;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  width: 500px;
+  cursor: pointer;
+}
+.SwiperCommunity .communitySlideContain .buttonDiv button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mySwiper {
+  height: 300px;
+}
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+  font-size: 20px;
+  color: #333;
+}
+.mySwiper .swiper-button-next {
+  right: 10px;
+}
+.mySwiper .swiper-button-prev {
+  left: 10px;
+}
+.mySwiper .swiper-pagination-bullet {
+  background-color: orange;
+  opacity: 1;
+}
+.mySwiper .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 10px;
+  border-radius: 50px !important;
+  background-color: darkorange;
+  transition: all 0.3s ease;
+}
+.mySwiper .groupSlideContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mySwiper .groupContain {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mySwiper .groupTop,
+.mySwiper .groupBottom {
+  margin-bottom: 15px;
+}
+.mySwiper .groupTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+.mySwiper .groupTop .leftPart {
+  justify-content: start;
+}
+.mySwiper .groupTop .leftPart h2 {
+  margin: 0;
+  margin-top: -20px;
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+}
+.mySwiper .groupTop .leftPart p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+.mySwiper .groupTop .rightPart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mySwiper .groupTop .rightPart i {
+  color: #ffd700;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+.mySwiper .groupTop .rightPart p {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 0;
+}
+.mySwiper .groupBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mySwiper .groupBottom .leftPart button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6104;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.mySwiper .groupBottom .leftPart button a {
+  text-decoration: none;
+  color: inherit;
+}
+.mySwiper .groupBottom .rightPart {
+  display: flex;
+  align-items: center;
+}
+.mySwiper .groupBottom .rightPart .avatarWrapper {
+  margin-left: -20px;
+  position: relative;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.mySwiper .groupBottom .rightPart .avatarWrapper:last-child {
+  margin-right: 0;
+}
+.mySwiper .groupBottom .rightPart .Avatars {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+}
+
+.SwiperStore {
+  height: 470px !important;
+  background-color: transparent !important;
+}
+.SwiperStore .swiper-button-next,
+.SwiperStore .swiper-button-prev {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.SwiperStore .swiper-button-next::after,
+.SwiperStore .swiper-button-prev::after {
+  font-size: 20px;
+  color: #333;
+}
+.SwiperStore .swiper-button-next {
+  right: 10px;
+}
+.SwiperStore .swiper-button-prev {
+  left: 10px;
+}
+.SwiperStore .swiper-pagination-bullet {
+  background-color: orange;
+  opacity: 1;
+}
+.SwiperStore .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 10px;
+  border-radius: 50px !important;
+  background-color: darkorange;
+  transition: all 0.3s ease;
+}
+.SwiperStore .swiper-pagination {
+  bottom: 10px;
+}
+.SwiperStore .swiper-container {
+  padding-bottom: 30px;
+}
+.SwiperStore .StoreSlideContain div.cardContain img.cardImg {
+  width: 100%;
+  height: 228px;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body p {
+  color: #848383;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.rating p.firstP,
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.rating i.bi-star-fill {
+  color: #ff9900;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.rating p.secondP {
+  color: #ff6104;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.bottomPart {
+  display: flex;
+  justify-content: space-between;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.bottomPart div.leftPart i {
+  color: #666;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.bottomPart .rightPart {
+  display: flex;
+  align-items: center;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.bottomPart .rightPart .avatarWrapper {
+  margin-left: -20px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.bottomPart .rightPart .avatarWrapper img {
+  width: 30px;
+  height: 30px;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.bottomPart .rightPart .avatarWrapper:last-child {
+  margin-right: 0;
+}
+.SwiperStore .StoreSlideContain div.cardContain div.card-body div.bottomPart .rightPart .Avatars {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+}/*# sourceMappingURL=MainPart.css.map */

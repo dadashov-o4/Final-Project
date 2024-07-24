@@ -1,0 +1,297 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+section.Section .mini-menu ul.uk-subnav-pill li {
+  font-weight: 400;
+}
+section.Section .mini-menu ul.uk-subnav-pill li:first-child {
+  font-weight: 500;
+  color: black !important;
+}
+section.Section .mini-menu ul.uk-subnav-pill li:first-child i {
+  border-bottom: 3px solid #f46119;
+}
+section.Section div.uk-page-heading {
+  border-radius: 20px;
+}
+section.Section div.uk-page-heading h1.uk-page-heading-h {
+  font-size: 27px;
+  font-family: "Marcellus";
+  font-weight: 900;
+}
+section.Section div.uk-page-heading p {
+  margin: 0;
+}
+section.Section .avatarBarleyDiv {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background-color: rgba(211, 211, 211, 0.2);
+  /* Daha şeffaf gri halka rengi */
+}
+section.Section .avatarBarleyDiv .barleyAvatar {
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+section.Section div.commentContain .commentForm .comment-border h4 {
+  font-size: 21px;
+}
+section.Section div.commentContain .commentForm .comment-border .uk-comment-body p {
+  color: #656565;
+  font-size: 15px;
+}
+section.Section div.commentContain div.commentBottomPart {
+  border: 1px solid #eaeaea;
+  /* Style for the h3Div */
+}
+section.Section div.commentContain div.commentBottomPart div.h3Div {
+  border-bottom: 1px solid #eaeaea;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 15px;
+}
+section.Section div.commentContain div.commentBottomPart div.h3Div h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+section.Section div.commentContain div.commentBottomPart div.textareaDiv {
+  position: relative;
+  width: 100%;
+}
+section.Section div.commentContain div.commentBottomPart div.textareaDiv textarea {
+  resize: none;
+  overflow: auto;
+  width: 100%;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+}
+section.Section div.commentContain div.commentBottomPart div.textareaDiv textarea::-webkit-scrollbar {
+  width: 12px;
+}
+section.Section div.commentContain div.commentBottomPart div.textareaDiv textarea::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+section.Section div.commentContain div.commentBottomPart div.textareaDiv textarea::-webkit-scrollbar-thumb {
+  background: #e8e7e7;
+  border-radius: 10px;
+}
+section.Section div.commentContain div.commentBottomPart .sendDiv .uk-button-default {
+  border-radius: 20px;
+  padding: 5px;
+}
+section.Section div.commentContain div.commentBottomPart .uk-button-default {
+  border-radius: 10px;
+}
+section.Section div.commentContain div.commentBottomPart .uk-button-default:hover {
+  background-color: #f46119;
+  color: white;
+}
+section.Section div.commentContain div.commentForm ul.comment-border {
+  border: 1px solid #eaeaea;
+}
+section.Section div.commentContain div.commentForm ul.comment-border li {
+  border-top: 1px solid #eaeaea;
+  padding-top: 40px;
+}
+section.Section div.commentContain div.commentForm ul.comment-border li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+div.right div.rightTop {
+  min-height: 340px;
+  padding-top: 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 16px;
+}
+div.right div.rightTop .avatarContain .usernameDiv .group-status {
+  color: #6c6b6b;
+}
+div.right div.rightTop .avatarContain .avatarBarleyDiv {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background-color: rgba(162, 160, 160, 0.2);
+  /* Daha şeffaf gri halka rengi */
+}
+div.right div.rightTop .avatarContain .avatarBarleyDiv .barleyAvatar {
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+div.right div.rightTop .avatarBottomPart {
+  border-bottom: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding: 8px;
+}
+div.right div.rightTop .avatarBottomPart .numbers {
+  padding: 20px;
+}
+div.right div.rightTop .avatarBottomPart .numbers P {
+  color: #6c6b6b;
+  font-size: 14px;
+}
+div.right div.rightTop .avatarBottomPart .viewDiv a {
+  font-weight: 400;
+}
+div.right .viewDiv {
+  width: 100%;
+}
+div.right .viewDiv .viewLink {
+  color: #f46119;
+  width: 100%;
+  background-color: #fbf6f3;
+  border-radius: 5px;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  padding: 11px;
+  width: 100%;
+}
+div.right .viewDiv .viewLink:hover {
+  background-color: #f46119;
+  color: white;
+  border-radius: 8px;
+}
+div.right .fl-cover-single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+div.right .fl-gp-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div.right .fl-gp-avatar {
+  margin-bottom: 8px;
+}
+div.right .avatar {
+  border-radius: 50%;
+}
+div.right .Barry {
+  margin-bottom: 4px;
+  text-align: center;
+}
+div.right .Barry a.LasterBarry {
+  color: black;
+  text-decoration: none;
+}
+div.right .usernameDiv {
+  margin-bottom: 16px;
+  text-align: center;
+}
+div.right .numbers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}
+div.right .numberLeft,
+div.right .numberRight {
+  text-align: center;
+}
+div.right .viewLink {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+section.myFriends {
+  background-color: white !important;
+}
+section.myFriends h3.FriendH3Top {
+  text-align: start;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #eaeaea;
+}
+section.myFriends h3.FriendH3Top i.fa-trophy {
+  color: #fb9460;
+  margin-right: 10px;
+}
+section.myFriends div.FriendContain {
+  padding: 20px;
+}
+section.myFriends div.FriendContain section.FriendSection {
+  display: flex;
+  margin-top: 20px;
+}
+section.myFriends div.FriendContain section.FriendSection div.FriendDiv h2.FriendH2 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+section.myFriends div.FriendContain section.FriendSection div.FriendDiv h2.FriendH2 a {
+  color: black !important;
+  text-decoration: none !important;
+}
+section.myFriends div.FriendContain section.FriendSection div.FriendDiv div.FriendDate time {
+  font-size: 12px;
+  color: #656565;
+  font-weight: 400;
+}
+section.myFriends div.FriendContain section.FriendSection img.FriendImg {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+section.myFriends div.FriendContain button.FriendViewAll {
+  border-radius: 20px;
+  padding: 4px;
+  background-color: #fef7f3;
+  color: #fb9460;
+}
+section.myFriends div.FriendContain button.FriendViewAll:hover {
+  background-color: #f46119;
+  color: white;
+}
+
+section.groupSection h3.groupH3 {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 15px;
+  font-size: 19px;
+  font-weight: 600;
+}
+section.groupSection h3.groupH3 i.fa-layer-group {
+  color: #fea071;
+  margin-right: 10px;
+}
+section.groupSection div.groupListContain {
+  padding: 10px 35px !important;
+}
+section.groupSection div.groupListContain ul.groupList {
+  list-style: none;
+  list-style-position: inside;
+  padding: 0;
+}
+section.groupSection div.groupListContain ul.groupList a.groupLink {
+  text-decoration: none;
+  font-size: 14px;
+  color: #656565;
+  font-weight: 500;
+}
+section.groupSection div.groupListContain ul.groupList a.groupLink i.fa-chevron-right {
+  color: #fb9460;
+}/*# sourceMappingURL=Profile.css.map */

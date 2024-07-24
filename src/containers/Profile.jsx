@@ -16,7 +16,7 @@ const Profile = () => {
                                 <section className="b-post b-post-full b-post-single clearfix Section">
                                     <div className="p-3 bg-white">
                                         <div
-                                            className="uk-page-heading uk-page-heading-style-a uk-height-medium uk-height-max-medium uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                                            className="uk-page-heading uk-page-heading-style-a uk-height-medium uk-height-max-medium uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-background-cover uk-light headingDiv"
                                             uk-img=""
                                             uk-parallax="bgy: -20"
                                             style={{ backgroundImage: "url('https://pro-theme.com/html/teamhost/assets/img/heading3.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "881px 589px", backgroundPositionY: "calc(-124.5px)" }}>
@@ -35,7 +35,7 @@ const Profile = () => {
                                             <p className="uk-heading-text">4 YEARS, 6 MONTHS AGO</p>
                                         </div>
                                     </div>
-                                    <div className="fl-subnav my-4 bg-white">
+                                    <div className="fl-subnav my-4 bg-white mini-menu">
                                         <ul className="uk-subnav uk-subnav-pill p-3" uk-margin="">
                                             <li className=" uk-first-column"><a href="#"><i className="bi bi-house-door me-2"></i>Overview</a></li>
                                             <li><a href="#"><i className="bi bi-info-circle me-2"></i>Info</a></li>
@@ -149,11 +149,11 @@ const Profile = () => {
                                         <div className="fl-gp-cells d-flex numbers">
                                             <div className="fl-gp-cell-left numberLeft">
                                                 <strong className='me-1'>24</strong>
-                                                <span>Followers</span>
+                                                <p className='m-0'>Followers</p>
                                             </div>
                                             <div className="fl-gp-cell-right numberRight">
                                                 <strong className='me-1'>12</strong>
-                                                <span>Posts</span>
+                                                <p className='m-0'>Posts</p>
                                             </div>
                                         </div>
 
@@ -171,7 +171,7 @@ const Profile = () => {
                                         <div className="widget-inner FriendContain">
                                             <section className="post-widget clearfix FriendSection">
                                                 <div className="post-widget__media"><a href="16_post.html"><img className="img-fluid FriendImg" src="https://res.cloudinary.com/dlsupk9sb/image/upload/v1721456405/user-1_ibe0ex.png" alt="foto" /></a></div>
-                                                <div className="post-widget__inner FriendDiv">
+                                                <div className="post-widget__inner FriendDiv ms-2">
                                                     <h2 className="post-widget__title FriendH2"><a href="16_post.html  FriendLink">Kristen Oswalt</a></h2>
                                                     <div className="post-widget__date FriendDate">
                                                         <time dateTime="2020-10-27 15:20">Dec 15, 2020</time>
@@ -180,7 +180,7 @@ const Profile = () => {
                                             </section>
                                             <section className="post-widget clearfix  FriendSection">
                                                 <div className="post-widget__media"><a href="16_post.html"><img className="img-fluid  FriendImg" src="https://res.cloudinary.com/dlsupk9sb/image/upload/v1721456405/user-2_g0ndpl.png" alt="foto" /></a></div>
-                                                <div className="post-widget__inner  FriendDiv">
+                                                <div className="post-widget__inner  FriendDiv ms-2">
                                                     <h2 className="post-widget__title  FriendH2"><a href="16_post.html FriendLink">Emma Stone</a></h2>
                                                     <div className="post-widget__date  FriendDate">
                                                         <time dateTime="2019-10-27 15:20">Jan 15, 2022</time>
@@ -189,7 +189,7 @@ const Profile = () => {
                                             </section>
                                             <section className="post-widget clearfix  FriendSection">
                                                 <div className="post-widget__media"><a href="16_post.html"><img className="img-fluid  FriendImg" src="https://res.cloudinary.com/dlsupk9sb/image/upload/v1721456405/user-3_pmvfrf.png" alt="foto" /></a></div>
-                                                <div className="post-widget__inner  FriendDiv">
+                                                <div className="post-widget__inner  FriendDiv ms-2">
                                                     <h2 className="post-widget__title  FriendH2"><a href="16_post.html FriendLink">Lester Barry</a></h2>
                                                     <div className="post-widget__date  FriendDate">
                                                         <time dateTime="2019-10-27 15:20">Feb 15, 2021</time>

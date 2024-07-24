@@ -40,6 +40,7 @@ $fontWeight600: 600;
         }
 
         form.search {
+
             .search-container {
                 position: relative;
                 margin: 20px;
@@ -48,19 +49,26 @@ $fontWeight600: 600;
                     padding: 40px;
                 }
 
+
                 input {
                     width: 550px;
                     height: 45px;
                     position: relative;
+                    box-shadow: none;
+                    border: 1px solid #eee;
+
+                    &:focus~span i.fa-magnifying-glass {
+                        display: none;
+                    }
                 }
 
                 span {
-
                     i.fa-magnifying-glass {
                         position: absolute;
                         left: 20px;
                         top: 50%;
                         transform: translateY(-50%);
+                        transition: opacity 0.3s ease; // Add transition for smooth effect
                     }
 
                     i.fa-microphone {
@@ -69,6 +77,7 @@ $fontWeight600: 600;
                 }
             }
         }
+
 
         div.logoDiv {
             img.logo {

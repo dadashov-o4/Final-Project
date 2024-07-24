@@ -1,0 +1,217 @@
+div.container .leftPart h3 {
+  font-weight: 600;
+  font-size: 27px;
+  font-family: "Marcellus";
+}
+div.container .leftPart .searchSection {
+  width: 770px !important;
+  padding: 40px;
+  flex-direction: row;
+}
+div.container .leftPart .searchSection form.search {
+  position: relative;
+  margin: 0 !important;
+}
+div.container .leftPart .searchSection form.search .fa-magnifying-glass {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+div.container .leftPart .searchSection form.search input {
+  padding-left: 40px;
+}
+div.container .leftPart .searchSection form.search .fa-microphone {
+  font-size: 22px;
+  margin-top: 5px;
+}
+div.container .leftPart .searchSection .selectSection {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+div.container .leftPart .searchSection .selectSection .form-select {
+  width: 100%;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  color: #495057;
+}
+div.container .leftPart .searchSection .selectSection .form-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+  border-color: #6c757d;
+}
+div.container .leftPart .searchSection .selectSection .form-select option {
+  background-color: #ffffff !important;
+  color: #495057 !important;
+}
+div.container .leftPart .searchSection .selectSection .form-select option::-moz-selection {
+  background-color: #e9ecef !important;
+}
+div.container .leftPart .searchSection .selectSection .form-select option:hover, div.container .leftPart .searchSection .selectSection .form-select option:focus, div.container .leftPart .searchSection .selectSection .form-select option:checked, div.container .leftPart .searchSection .selectSection .form-select option::selection {
+  background-color: #e9ecef !important;
+}
+div.container .leftPart .cardsPart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+  height: auto;
+  background-color: transparent;
+}
+div.container .leftPart .cardsPart .Card {
+  width: calc(33% - 20px);
+  margin: 10px;
+  margin-bottom: 50px;
+  background-color: white;
+  height: 390px;
+}
+div.container .leftPart .cardsPart .Card .ImgContain {
+  padding: 10px !important;
+  padding-bottom: 0;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+div.container .leftPart .cardsPart .Card .ImgDiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+div.container .leftPart .cardsPart .Card .textOverlay {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: white;
+  border-radius: 5px;
+}
+div.container .leftPart .cardsPart .Card .textOverlay h2 {
+  margin: 0;
+  color: white;
+  font-size: 17px;
+}
+div.container .leftPart .cardsPart .Card .textOverlay p {
+  margin: 0;
+  color: #b9b9b9;
+  font-size: 12px;
+}
+div.container .leftPart .cardsPart .Card .Img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+div.container .leftPart .cardsPart .Card .numberDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+div.container .leftPart .cardsPart .Card .members {
+  border-right: 0 !important;
+}
+div.container .leftPart .cardsPart .Card .posts,
+div.container .leftPart .cardsPart .Card .members {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  border: solid #eaeaea;
+  border-width: 0 1px 1px 0 !important;
+}
+div.container .leftPart .cardsPart .Card .posts h2,
+div.container .leftPart .cardsPart .Card .members h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+div.container .leftPart .cardsPart .Card .posts p,
+div.container .leftPart .cardsPart .Card .members p {
+  margin: 0;
+  font-size: 15px;
+  color: #495057;
+}
+div.container .leftPart .cardsPart .Card .buttonDiv {
+  text-align: center;
+  background-color: #f5f5f5;
+}
+div.container .leftPart .cardsPart .Card .buttonDiv button {
+  padding: 10px 20px;
+  background-color: #ff6104;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+div.container .leftPart .cardsPart .Card .buttonDiv button a {
+  color: #fff;
+  text-decoration: none;
+}
+div.container .rightPart h3 {
+  font-weight: 600;
+  font-size: 27px;
+  font-family: "Marcellus";
+}
+div.container .rightPart .cardsPart .Card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+div.container .rightPart .cardsPart .Card .cardLeftPart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.container .rightPart .cardsPart .Card .cardLeftPart .avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #ff6104 !important;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+div.container .rightPart .cardsPart .Card .cardLeftPart .avatar p {
+  font-size: 30px;
+  margin: auto;
+  color: white;
+}
+div.container .rightPart .cardsPart .Card .cardLeftPart div.forH4 h4 {
+  margin: auto !important;
+}
+div.container .rightPart .cardsPart .Card .cardRightPart i {
+  font-size: 30px;
+}
+div.container .rightPart .cardsPart .CardAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5e4dc;
+  margin-top: 20px;
+  border: 2px solid #f8a16e;
+  border-radius: 5px;
+  padding: 15px;
+}
+div.container .rightPart .cardsPart .CardAdd p {
+  color: #f98e4f;
+  margin: auto;
+}
+div.container .rightPart .cardsPart .CardAdd:hover {
+  background-color: #ff6104;
+  border: none;
+}
+div.container .rightPart .cardsPart .CardAdd:hover p {
+  color: white;
+}/*# sourceMappingURL=Favourites.css.map */

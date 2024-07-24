@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './MainPart.scss';
-import { Autoplay, Navigation, Pagination, History } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination,  } from 'swiper/modules';
 
 
 

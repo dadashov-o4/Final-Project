@@ -1,18 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 // Variables
 $border-color: #ddd;
 $primary-color: #007bff;
 $border-radius: 8px;
 $padding: 16px;
 
+*{
+    font-family: 'Roboto', sans-serif; // Apply Roboto font globally
+}
+
 
 section.Section {
+
+    .mini-menu{
+        ul.uk-subnav-pill{
+
+            li{
+                font-weight: 400;
+            }
+            li:first-child{
+                font-weight: 500;
+                color: black !important;
+                i{
+                    border-bottom: 3px solid #f46119;
+
+                }
+            }
+        }
+    }
+
+    
 
     div.uk-page-heading {
 
         border-radius: 20px;
 
         h1.uk-page-heading-h {
-            font-size: 35px;
+            font-size: 27px;
+            font-family: 'Marcellus';
+            font-weight: 900;
+        }
+        p{
+            margin: 0;
         }
 
     }
@@ -36,6 +65,19 @@ section.Section {
     }
 
     div.commentContain {
+        .commentForm{
+            .comment-border{
+                h4{
+                    font-size: 21px;
+                }
+                .uk-comment-body{
+                    p{
+                        color: #656565;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
         div.commentBottomPart {
             border: 1px solid #eaeaea;
 
@@ -46,6 +88,10 @@ section.Section {
                 border-bottom-left-radius: 0;
                 border-bottom-right-radius: 0;
                 margin-bottom: 15px;
+                h3{
+                    font-weight: 600;
+                    font-size: 20px;
+                }
             }
 
             div.textareaDiv {
@@ -89,6 +135,11 @@ section.Section {
                 border-radius: 10px;
             }
 
+            .uk-button-default:hover{
+                background-color: #f46119;
+                color: #ffff;
+            }
+
 
         }
 
@@ -126,7 +177,11 @@ div.right {
 
         .avatarContain {
 
-
+            .usernameDiv{
+                .group-status{
+                    color: #6c6b6b;
+                }
+            }
 
             .avatarBarleyDiv {
 
@@ -159,7 +214,16 @@ div.right {
 
             .numbers {
                 padding: 20px;
+                P{
+                    color: #6c6b6b;
+                    font-size: 14px;
+                }
 
+            }
+            .viewDiv{
+                a{
+                    font-weight: 400;
+                }
             }
 
         }
@@ -292,8 +356,9 @@ section.myFriends {
                 h2.FriendH2 {
 
 
-                    font-size: 15px;
+                    font-size: 14px;
                     margin: 0;
+                    font-weight: 500;
 
                     a {
                         color: black !important;
@@ -303,7 +368,9 @@ section.myFriends {
 
                 div.FriendDate {
                     time {
-                        font-size: 10px;
+                        font-size: 12px;
+                        color: #656565;
+                        font-weight: 400;
                     }
                 }
             }
@@ -323,6 +390,10 @@ section.myFriends {
             background-color: #fef7f3;
             color: #fb9460;
         }
+        button.FriendViewAll:hover{
+            background-color: #f46119;
+            color: #ffff;
+        }
     }
 }
 
@@ -331,6 +402,9 @@ section.groupSection {
     h3.groupH3 {
         border-bottom: 1px solid #eaeaea;
         padding-bottom: 15px;
+        font-size: 19px;
+        font-weight: 600;
+       
 
         i.fa-layer-group {
             color: #fea071;
@@ -350,7 +424,9 @@ section.groupSection {
 
             a.groupLink {
                 text-decoration: none;
-                color: black;
+                font-size: 14px;
+                color: #656565;
+                font-weight: 500;
 
                 i.fa-chevron-right {
                     color: #fb9460;

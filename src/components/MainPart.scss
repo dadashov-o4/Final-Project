@@ -1,19 +1,28 @@
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// Global Styles
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; // Apply Roboto font globally
 }
 
-
+// Container Styles
 div.container {
     background-color: #f5f5f5;
     margin: 0;
     padding: 60px 30px;
-    width: 100vw;
+    width: 100%;
     overflow: auto;
     height: 100vh;
 
     div.row {
-
         div.recommendations {
+            h3 {
+                font-family: 'Marcellus';
+                font-weight: 600;
+                font-size: 30px;
+            }
 
             .SwiperRecommend {
                 width: 750px;
@@ -23,12 +32,19 @@ div.container {
             }
         }
 
-
         div.archive {
+            width: 400px;
+            margin-left: 80px;
 
+            h3 {
+                margin: 0;
+                font-family: 'Marcellus';
+                font-weight: 600;
+                font-size: 30px;
+            }
 
             .SwiperArchive {
-                width: 400px;
+                width: 100%;
                 height: 350px;
                 background-color: aquamarine;
             }
@@ -37,6 +53,12 @@ div.container {
 
     div.communities {
         margin-top: 60px;
+
+        h3 {
+            font-family: 'Marcellus';
+            font-weight: 600;
+            font-size: 30px;
+        }
 
         .SwiperCommunity {
             background-color: beige;
@@ -47,6 +69,13 @@ div.container {
     div.group {
         margin-top: 60px;
 
+        h3 {
+            font-family: 'Marcellus';
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+
         .SwiperGroup {
             background-color: bisque;
             height: 200px;
@@ -56,6 +85,12 @@ div.container {
     div.store {
         margin-top: 60px;
 
+        h3 {
+            font-family: 'Marcellus';
+            font-weight: 600;
+            font-size: 30px;
+        }
+
         .SwiperStore {
             background-color: bisque;
             height: 300px;
@@ -63,12 +98,10 @@ div.container {
     }
 }
 
-
-
-
+// SwiperRecommend Styles
 .SwiperRecommend {
     padding: 10px;
-    background-color: white !important; // Set background color to white
+    background-color: white !important;
 
     .swiper-wrapper {
         height: 100%;
@@ -97,8 +130,6 @@ div.container {
             }
         }
     }
-
-
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -129,7 +160,7 @@ div.container {
     }
 
     .swiper-button-prev {
-        right: 70px; // Adjust to leave space for the next button
+        right: 70px;
     }
 
     .swiper-pagination-bullet {
@@ -154,8 +185,7 @@ div.container {
     }
 }
 
-
-
+// SwiperArchive Styles
 .SwiperArchive {
     padding: 10px;
     background-color: transparent !important;
@@ -193,7 +223,6 @@ div.container {
     .archiveSlideContain {
         padding: 10px;
         background-color: white;
-
     }
 
     .archiveContain {
@@ -201,10 +230,9 @@ div.container {
         background-color: white;
         height: 300px !important;
 
-
         .archiveImg,
         .archiveAbout {
-            flex: 1; // Each takes up half of the slide width
+            flex: 1;
         }
 
         .archiveImg {
@@ -213,9 +241,9 @@ div.container {
             align-items: center;
 
             img {
-                width: 100%; // Make sure the image fills its container
+                width: 100%;
                 height: 100%;
-                object-fit: cover; // Ensures the image covers the container properly
+                object-fit: cover;
             }
         }
 
@@ -227,10 +255,15 @@ div.container {
 
             h3 {
                 margin-bottom: 5px;
+                font-size: 25px !important;
             }
 
             p {
                 margin-top: 0;
+                font-size: 16px !important;
+                padding-right: 3px;
+                color: #848383;
+
             }
 
             button {
@@ -240,15 +273,16 @@ div.container {
                 align-self: flex-start;
                 margin-top: 0;
             }
+            button:hover{
+                color: #ff6104;
+            }
         }
     }
 
     .swiper-button-next,
     .swiper-button-prev {
         background-color: #fff;
-        /* Arka plan rengini beyaz yapın */
         color: #000;
-        /* Ok işaretinin rengini siyah yapın */
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -261,16 +295,13 @@ div.container {
         z-index: 10;
         cursor: pointer;
         border: none;
-        /* Varsayılan sınırı kaldırın */
 
         &::after {
             font-size: 20px;
             color: #000;
-            /* Ok işaretinin rengini siyah yapın */
         }
     }
 
-    /* Konumlandırma */
     .swiper-button-next {
         right: 10px;
     }
@@ -278,15 +309,9 @@ div.container {
     .swiper-button-prev {
         left: 10px;
     }
-
-
-
 }
 
-
-
-
-
+// SwiperCommunity Styles
 .SwiperCommunity {
     height: 750px !important;
 
@@ -320,7 +345,6 @@ div.container {
         background-color: #f0f0f0;
     }
 
-
     .swiper-pagination-bullet {
         background-color: orange;
         opacity: 1;
@@ -347,7 +371,6 @@ div.container {
         flex-direction: column;
         margin: 0 5px;
         height: 700px;
-
 
         .communityImgContain {
             padding: 10px !important;
@@ -376,11 +399,13 @@ div.container {
         .textOverlay h2 {
             margin: 0;
             color: white;
+            font-size: 20px;
         }
 
         .textOverlay p {
             margin: 0;
             color: #b9b9b9;
+            font-size: 15px;
         }
 
         .communnityImg {
@@ -390,9 +415,6 @@ div.container {
             object-position: center;
         }
 
-
-
-
         .numberDiv {
             display: flex;
             justify-content: space-between;
@@ -400,10 +422,8 @@ div.container {
         }
 
         .members {
-
             border-right: 0 !important;
         }
-
 
         .posts,
         .members {
@@ -413,17 +433,28 @@ div.container {
             border: solid #eaeaea;
             border-width: 0 1px 1px 0 !important;
 
-            h2,
+            h2 {
+                margin: 0;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
             p {
+                color: #848383;
                 margin: 0;
                 font-size: 15px;
             }
-
         }
 
         .buttonDiv {
             text-align: center;
             background-color: #f5f5f5;
+
+            p {
+                color: #848383;
+                font-weight: 400;
+                font-size: 13px;
+            }
 
             button {
                 padding: 10px 20px;
@@ -441,18 +472,13 @@ div.container {
             }
         }
     }
-
 }
 
+// MySwiper Styles
 
-$avatar-size: 50px;
-$space-between: 30px;
-$star-color: #ffd700;
 
 .mySwiper {
-
     height: 300px;
-
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -473,19 +499,17 @@ $star-color: #ffd700;
     }
 
     .swiper-button-next {
-        right: 10px; // Sağda konumlandır
+        right: 10px;
     }
 
     .swiper-button-prev {
-        left: 10px; // Solda konumlandır
+        left: 10px;
     }
 
     .swiper-pagination-bullet {
         background-color: orange;
         opacity: 1;
     }
-
-
 
     .swiper-pagination-bullet-active {
         width: 30px;
@@ -494,8 +518,6 @@ $star-color: #ffd700;
         background-color: darkorange;
         transition: all 0.3s ease;
     }
-
-
 
     .groupSlideContain {
         display: flex;
@@ -527,21 +549,21 @@ $star-color: #ffd700;
         padding-bottom: 10px;
         border-bottom: 1px solid #eaeaea;
 
-
         .leftPart {
             justify-content: start;
-
 
             h2 {
                 margin: 0;
                 margin-top: -20px;
-                font-size: 1.5rem;
-                color: #333;
+                font-size: 18px;
+                color: black;
+                font-weight: 400;
             }
 
             p {
                 margin: 0;
                 color: #666;
+                font-size: 14px;
             }
         }
 
@@ -551,7 +573,7 @@ $star-color: #ffd700;
             flex-direction: column;
 
             i {
-                color: $star-color;
+                color: #ffd700;
                 margin-right: 5px;
                 font-size: 1.2rem;
             }
@@ -570,19 +592,16 @@ $star-color: #ffd700;
         justify-content: space-between;
         align-items: center;
 
-
         .leftPart {
             button {
                 padding: 10px 20px;
                 border: none;
                 border-radius: 5px;
-                background-color: #ff6104; // Buton rengi
+                background-color: #ff6104;
                 color: #fff;
                 font-size: 0.9rem;
                 cursor: pointer;
                 transition: background-color 0.3s;
-
-
 
                 a {
                     text-decoration: none;
@@ -607,18 +626,18 @@ $star-color: #ffd700;
             }
 
             .Avatars {
-                width: $avatar-size;
-                height: $avatar-size;
+                width: 50px;
+                height: 50px;
                 border-radius: 50%;
                 object-fit: cover;
                 display: flex;
             }
         }
     }
-
 }
 
 
+// SwiperStore Styles
 .SwiperStore {
     height: 470px !important;
     background-color: transparent !important;
@@ -670,18 +689,23 @@ $star-color: #ffd700;
         padding-bottom: 30px;
     }
 
-
     .StoreSlideContain {
-
         div.cardContain {
-
             img.cardImg {
-
                 width: 100%;
                 height: 228px;
             }
 
             div.card-body {
+                h4 {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #848383;
+                }
+
                 div.rating {
 
                     p.firstP,
@@ -713,8 +737,6 @@ $star-color: #ffd700;
                             border: 3px solid white;
                             border-radius: 50%;
 
-                            
-
                             img {
                                 width: 30px;
                                 height: 30px;
@@ -726,8 +748,8 @@ $star-color: #ffd700;
                         }
 
                         .Avatars {
-                            width: $avatar-size;
-                            height: $avatar-size;
+                            width: 50px;
+                            height: 50px;
                             border-radius: 50%;
                             object-fit: cover;
                             display: flex;
@@ -736,6 +758,5 @@ $star-color: #ffd700;
                 }
             }
         }
-
     }
 }

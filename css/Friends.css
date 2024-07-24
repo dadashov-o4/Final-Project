@@ -1,0 +1,140 @@
+section.friends {
+  width: 100%;
+}
+section.friends div.searchPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px;
+}
+section.friends div.searchPart form.search {
+  position: relative;
+  width: 80%;
+  margin-left: 0 !important;
+}
+section.friends div.searchPart form.search .fa-magnifying-glass {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+section.friends div.searchPart form.search input {
+  padding-left: 40px;
+  height: 45px;
+}
+section.friends div.searchPart form.search .fa-microphone {
+  font-size: 22px;
+  margin-top: 5px;
+}
+section.friends div.searchPart .form-select {
+  width: 15%;
+  height: 45px;
+  background-color: #f8f9fa;
+}
+section.friends div.searchPart .form-select:focus {
+  box-shadow: none;
+  border: 1px solid #dcdada;
+}
+section.friends div.searchPart .moreBar i {
+  font-size: 30px;
+}
+section.friends .friendCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+section.friends .friendCards .card {
+  flex: 1 1 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+}
+section.friends .friendCards .card .left {
+  display: flex;
+  align-items: center;
+}
+section.friends .friendCards .card .left .imgDiv {
+  margin-right: 10px;
+}
+section.friends .friendCards .card .left .imgDiv img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+section.friends .friendCards .card .left .for-h3-p h3,
+section.friends .friendCards .card .left .for-h3-p p {
+  margin: 0;
+}
+section.friends .friendCards .card .right i {
+  cursor: pointer;
+  font-size: 30px;
+  margin-right: 20px;
+}
+section.friends .edit-friends .edit-contain {
+  background-color: white;
+}
+section.friends .edit-friends .edit-contain .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+section.friends .edit-friends .edit-contain .card .left {
+  display: flex;
+  align-items: center;
+}
+section.friends .edit-friends .edit-contain .card .left .imgDiv {
+  margin-right: 10px;
+}
+section.friends .edit-friends .edit-contain .card .left .imgDiv img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+section.friends .edit-friends .edit-contain .card .left .for-p p {
+  margin: 0;
+}
+section.friends .edit-friends .edit-contain .card .right {
+  display: flex;
+  gap: 10px;
+}
+section.friends .edit-friends .edit-contain .card .right span.for-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-color: #e5f6ee;
+  border-radius: 15px;
+}
+section.friends .edit-friends .edit-contain .card .right span.for-check i.bi-check-circle {
+  color: rgb(13, 190, 13);
+  font-size: 20px;
+}
+section.friends .edit-friends .edit-contain .card .right span.for-trash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-color: rgb(241, 190, 174);
+  border-radius: 15px;
+}
+section.friends .edit-friends .edit-contain .card .right span.for-trash i.bi-trash {
+  font-size: 20px;
+  color: rgb(180, 4, 4);
+}/*# sourceMappingURL=Friends.css.map */

@@ -1,67 +1,81 @@
 div.container {
-    .searchSection {
-        width: 800px !important;
-        padding: 40px;
-
-
-        form.search {
-            position: relative;
-
-            .fa-magnifying-glass {
-                position: absolute;
-                left: 25px;
-                top: 50%;
-                transform: translateY(-50%);
-                pointer-events: none;
-            }
-
-            input {
-                padding-left: 40px;
-            }
-
-            .fa-microphone {
-                font-size: 22px;
-                margin-top: 5px;
-            }
+    .leftPart {
+        h3{
+            font-weight: 600;
+            font-size: 27px;
+            font-family: 'Marcellus';
         }
+        .searchSection {
+            width: 770px !important;
+            padding: 40px;
+            flex-direction: row;
 
-        .selectSection {
-            display: flex;
-            gap: 10px;
 
-           
+            form.search {
+                position: relative;
+                margin: 0 !important;
 
-            .form-select {
-                width: 100%; // Adjust width as needed
-                background-color: #f8f9fa; // Light grey background color
-                border: 1px solid #ced4da; // Light grey border
-                border-radius: 4px; // Rounded corners
-                padding: 10px; // Padding for better appearance
-                font-size: 16px; // Font size for better readability
-                color: #495057; // Text color
 
-                &:focus {
-                    outline: none; // Remove outline on focus
-                    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25); // Light grey box shadow on focus
-                    border-color: #6c757d; // Darker grey border on focus
+
+                .fa-magnifying-glass {
+                    position: absolute;
+                    left: 25px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    pointer-events: none;
+
                 }
 
-                option {
-                    background-color: #ffffff !important; // White background for options
-                    color: #495057 !important; // Text color for options
+                input {
+                    padding-left: 40px;
 
-                    &:hover,
-                    &:focus,
-                    &:checked,
-                    &::selection {
-                        background-color: #e9ecef !important; // Light grey background for hovered/selected options
+                }
+
+                .fa-microphone {
+                    font-size: 22px;
+                    margin-top: 5px;
+                }
+            }
+
+            .selectSection {
+                display: flex;
+                gap: 10px;
+                width: 100%;
+
+
+
+                .form-select {
+                    width: 100%; // Adjust width as needed
+                    background-color: #f8f9fa; // Light grey background color
+                    border: 1px solid #ced4da; // Light grey border
+                    border-radius: 4px; // Rounded corners
+                    padding: 10px; // Padding for better appearance
+                    font-size: 16px; // Font size for better readability
+                    color: #495057; // Text color\
+
+                    &:focus {
+                        outline: none; // Remove outline on focus
+                        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25); // Light grey box shadow on focus
+                        border-color: #6c757d; // Darker grey border on focus
+                    }
+
+                    option {
+                        background-color: #ffffff !important; // White background for options
+                        color: #495057 !important; // Text color for options
+
+                        &:hover,
+                        &:focus,
+                        &:checked,
+                        &::selection {
+                            background-color: #e9ecef !important; // Light grey background for hovered/selected options
+                        }
                     }
                 }
+
             }
 
         }
 
-    }
 
 
 
@@ -70,7 +84,6 @@ div.container {
 
 
 
-    .leftPart {
         .cardsPart {
             display: flex;
             flex-wrap: wrap;
@@ -80,7 +93,7 @@ div.container {
             background-color: transparent;
 
             .Card {
-                width: calc(33.333% - 20px); // Each card will take up 1/3 of the space with padding
+                width: calc(33% - 20px); // Each card will take up 1/3 of the space with padding
                 margin: 10px; // Padding around each card
                 margin-bottom: 50px;
                 background-color: white;
@@ -114,11 +127,13 @@ div.container {
                 .textOverlay h2 {
                     margin: 0;
                     color: white;
+                    font-size: 17px;
                 }
 
                 .textOverlay p {
                     margin: 0;
                     color: #b9b9b9;
+                    font-size: 12px;
                 }
 
                 .Img {
@@ -146,10 +161,16 @@ div.container {
                     border: solid #eaeaea;
                     border-width: 0 1px 1px 0 !important;
 
-                    h2,
+                    h2 {
+                        margin: 0;
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+
                     p {
                         margin: 0;
                         font-size: 15px;
+                        color: #495057;
                     }
                 }
 
@@ -177,6 +198,11 @@ div.container {
     }
 
     .rightPart {
+        h3{
+            font-weight: 600;
+            font-size: 27nppx;
+            font-family: "Marcellus";
+        }
         .cardsPart {
             .Card {
                 display: flex;
@@ -215,13 +241,15 @@ div.container {
                         }
                     }
                 }
-                .cardRightPart{
-                    i{
+
+                .cardRightPart {
+                    i {
                         font-size: 30px;
                     }
                 }
             }
-            .CardAdd{
+
+            .CardAdd {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -231,9 +259,17 @@ div.container {
                 border-radius: 5px;
                 padding: 15px;
 
-                p{
+                p {
                     color: #f98e4f;
                     margin: auto;
+                }
+            }
+
+            .CardAdd:hover {
+                background-color: #ff6104;
+                border: none;
+                p{
+                    color: #ffff;
                 }
             }
         }
