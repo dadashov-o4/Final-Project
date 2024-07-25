@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
@@ -19,6 +20,7 @@
     "bootstrap-icons": "^1.11.3",
     "boxicons": "^2.1.4",
     "font-awesome": "^4.7.0",
+    "formik": "^2.4.6",
     "ra-ui-materialui": "^5.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

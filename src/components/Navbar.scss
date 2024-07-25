@@ -4,7 +4,6 @@ $fontFamily: "Inter", sans-serif;
 $fontWeight500: 500;
 $fontWeight600: 600;
 
-
 .navbar {
     font-family: $fontFamily;
     font-weight: $fontWeight500;
@@ -15,40 +14,29 @@ $fontWeight600: 600;
 
     div.container-fluid {
         .logoDiv {
+            display: flex;
+            align-items: center;
+            .logo {
+                width: 30px;
+                height: 47px;
+                margin-bottom: 20px;
+                animation: moveUpDown 1.5s infinite; // Apply moveUpDown animation to the logo image
+            }
+
             span {
                 font-family: $fontFamily;
                 font-weight: $fontWeight600;
                 color: black;
                 text-decoration: none;
-            }
-        }
-
-        div.collapse {
-            ul {
-                li {
-                    span {
-                        i.fa-comment-dots {
-                            font-size: 22px;
-                        }
-
-                        i.fa-bell {
-                            font-size: 22px;
-                        }
-                    }
-                }
+                font-size: 20px;
+                margin-left: 20px;
             }
         }
 
         form.search {
-
             .search-container {
                 position: relative;
                 margin: 20px;
-
-                input::placeholder {
-                    padding: 40px;
-                }
-
 
                 input {
                     width: 550px;
@@ -56,38 +44,34 @@ $fontWeight600: 600;
                     position: relative;
                     box-shadow: none;
                     border: 1px solid #eee;
-
-                    &:focus~span i.fa-magnifying-glass {
-                        display: none;
-                    }
-                }
-
-                span {
-                    i.fa-magnifying-glass {
-                        position: absolute;
-                        left: 20px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        transition: opacity 0.3s ease; // Add transition for smooth effect
-                    }
-
-                    i.fa-microphone {
-                        font-size: 24px;
-                    }
+                    font-size: 16px;
                 }
             }
         }
 
-
-        div.logoDiv {
-            img.logo {
-                width: 30px;
-                height: 47px;
-                margin-bottom: 20px;
-            }
-
-            span {
-                font-size: 20px;
+        div.collapse {
+            ul {
+                li {
+                    span {
+                        position: relative; // For positioning the notification dot
+                        
+                        i.fa-comment-dots,
+                        i.fa-bell {
+                            font-size: 22px;
+                        }
+                        
+                        .notification-dot {
+                            position: absolute;
+                            top: -5px;
+                            right: -5px;
+                            width: 8px;
+                            height: 8px;
+                            background-color: #ff6104; // Your orange color
+                            border-radius: 50%;
+                            animation: blink 1.5s infinite; // Apply blink animation
+                        }
+                    }
+                }
             }
         }
 
@@ -104,7 +88,95 @@ $fontWeight600: 600;
                     height: 32px;
                 }
             }
+        }
+    }
 
+    @media (max-width: 768px) {
+        form.search {
+            .search-container {
+                input {
+                    width: 100%;
+                    height: 35px;
+                    font-size: 14px;
+                }
+
+                span {
+                    i.fa-magnifying-glass {
+                        font-size: 20px;
+                    }
+
+                    i.fa-microphone {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .logoDiv {
+            span {
+                display: none; // Hide 'TEAMHOST' text on small screens
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        form.search {
+            margin: 0 !important;
+            .search-container {
+                input {
+                    width: 100px !important;
+                    height: 30px;
+                    font-size: 12px;
+                    margin-left: -50px;
+                }
+
+                span {
+                    i.fa-magnifying-glass {
+                        display: none;
+                    }
+
+                    i.fa-microphone {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .logoDiv {
+            img.logo {
+                width: 25px;
+                height: 35px;
+            }
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+
+    // Keyframes for moveUpDown animation
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px); // Adjust the vertical movement
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    // Keyframes for blink animation
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.3;
+        }
+        100% {
+            opacity: 1;
         }
     }
 }

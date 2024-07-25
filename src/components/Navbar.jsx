@@ -1,23 +1,16 @@
-import React , { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './Navbar.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Navbar.scss';
 
 const Navbar = () => {
-
-        const [isSearching, setIsSearching] = useState(false);
-
-        const handleInputChange = (e) => {
-            setIsSearching(e.target.value.length > 0);
-        };
-    
     return (
         <>
             <nav className="navbar navbar-expand-lg p-0">
                 <div className="container-fluid">
-                    <div className="logoDiv d-flex align-items-center px-4">
-                        <Link rel="stylesheet" className='text-decoration-none' to="/">
-                            <img className='logo me-4' src="https://res.cloudinary.com/dlsupk9sb/image/upload/v1717839800/logo_divq7y.png" alt="Logo" />
+                    <div className="logoDiv d-flex align-items-center justify-content-center px-4">
+                        <Link className='text-decoration-none' to="/">
+                            <img className='logo me-0' src="https://res.cloudinary.com/dlsupk9sb/image/upload/v1717839800/logo_divq7y.png" alt="Logo"/>
                             <span>TEAMHOST</span>
                         </Link>
                     </div>
@@ -28,13 +21,8 @@ const Navbar = () => {
                                 type="search"
                                 placeholder="Search"
                                 aria-label="Search"
-                                onChange={handleInputChange}
                             />
-                            {!isSearching && (
-                                <span>
-                                    <i className="fa-solid fa-magnifying-glass"></i>
-                                </span>
-                            )}
+                            
                             <span>
                                 <i className="fa-solid fa-microphone"></i>
                             </span>
@@ -57,14 +45,20 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li className="nav-item d-flex align-items-center me-1">
-                                <span><i class="fa-solid fa-comment-dots"></i></span>
+                                <span className="icon-container">
+                                    <i className="fa-solid fa-comment-dots"></i>
+                                    <div className="notification-dot"></div>
+                                </span>
                             </li>
                             <li className="nav-item d-flex align-items-center mx-3">
-                                <span><i class="fa-solid fa-bell"></i></span>
+                                <span className="icon-container">
+                                    <i className="fa-solid fa-bell"></i>
+                                    <div className="notification-dot"></div>
+                                </span>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img className='avatarLogo me-2' src="https://res.cloudinary.com/dlsupk9sb/image/upload/v1717839065/profile_kxy6qb.png" alt="avatar" />  Hi,Jack
+                                    <img className='avatarLogo me-2' src="https://res.cloudinary.com/dlsupk9sb/image/upload/v1717839065/profile_kxy6qb.png" alt="avatar" /> Hi, Jack
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="#">Action</a></li>
@@ -75,10 +69,8 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-
-
         </>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
